@@ -81,13 +81,12 @@ nav a {
 }
 
 .product {
-  padding: 2px;
+  margin: 10px 20px 0 0;
 }
 
 .product img {
   height: 200px;
   width: 300px;
-  margin-right: 20px;
 }
 
 /*** Location Content Styles ***/
