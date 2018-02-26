@@ -1,55 +1,42 @@
 /*** Global Styles ***/
 
-body,
-h1,
-ul {
-  /* margin: 0;
-  padding: 0; */
-}
-
 body {
   font-family: Helvetica, Verdana, sans-serif;
   font-size: 22px;
-  color: seashell;
-  background-color: skyblue;
-  opacity: 0.9;
-  /* width: 1200px; */
   text-align: center;
-}
-
-/* nav span {
-  display: block;
-  padding: 20px 10px;
-} */
-
-nav {
-  text-align: right;
-  flex-grow: 1;
-  /* flex-flow: row wrap; */
-}
-
-nav a {
   color: seashell;
-  text-decoration: underline;
-  padding: 20px 10px;
+  background-color: black;
+  margin: 0;
+  opacity: 0.9;
 }
 
-nav li {
-  list-style: none;
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary {
+  width: 1200px;
+  padding-top: 69px;
+  margin: auto;
 }
 
 /*** Header Styles ***/
 
 header {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  /* position: fixed; */
-  z-index: 1;
-  /* width: 1200px; */
+  width: 100%;
   height: 69px;
-  /* border-bottom: 1px solid seashell; */
-  border: 1px solid black;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+  background-color: black;
+  border-bottom: 1px solid seashell;
 }
 
 .logo img {
@@ -57,37 +44,85 @@ header {
   padding-left: 10px;
 }
 
+nav {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 10px;
+}
 
-/*** Hero Style ***/
+nav a {
+  color: seashell;
+  text-decoration: underline;
+  padding-right: 20px;
+}
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1200px;
+/*** Mission Section Styles ***/
+
+#mission {
   height: 700px;
-  border: 1px solid black;
-  margin-top: 10px;
+  width: 1200px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  padding-top: 50px;
+}
+
+#mission-band {
+  margin: auto;
+  width: 100%;
+  background-color: black;
 }
 
 /*** Featured Content Styles ***/
 
-.featured {
-  border: 1px solid black;
-  margin-top: 10px;
+#featured {
+  height: 700px;
+  width: 1000px;
+  margin:auto;
+  padding-top: 69px;
+}
+
+.product {
+  padding: 2px;
+}
+
+.product img {
+  height: 200px;
+  width: 300px;
+  margin-right: 20px;
 }
 
 /*** Location Content Styles ***/
 
-.locations {
-  border: 1px solid black;
-  margin-top: 10px;
+#locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  padding-top: 69px;
 }
 
-/*** Footer Styles ***/
-
-.footer {
-  border: 1px solid black;
-  margin-top: 10px;
+#locations h2 {
+  padding-bottom: 15px;
 }
+
+.address {
+  background-color: black;
+  width: 280px;
+  margin: 0 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  opacity: 1.0;
+}
+
+/* Contact Secton Styles  */
+
+#contact {
+  height: 200px;
+}
+
+/* Footer Styles */
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  }
